@@ -5,7 +5,12 @@ import java.util.List;
 
 import com.vodafone.model.PlanDetails;
 
+
+//Facade Class
+
 public class GetProductPlanFacade {
+	
+	
 	
 	private List<PlanDetails> listPlanDetails;
 	
