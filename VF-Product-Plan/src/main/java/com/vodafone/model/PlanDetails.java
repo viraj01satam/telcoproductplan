@@ -3,20 +3,23 @@ package com.vodafone.model;
 public class PlanDetails {
 	
 	private String planId;
+	private String planType;
 	private String planName;
-	private String tariff;
-	private String validity; 
-	private String startDate; 
-	private String endDate; 
+	private String planTariff;
+	private String planValidity; 
+	private String planStartDate; 
+	private String planEndDate; 
 	private String talkTime; 
-	private String minIntFree; 
-	private String minLocalFree; 
-	private String smsIntFree; 
-	private String smsLocalFree; 
-	private String tax; 
-	private String ratelocalcall; 
-	private String rateIntCall;
-	private String contentInfo;
+	private String freeIntlMins; 
+	private String freeLocalMins; 
+	private String freeIntlSMS; 
+	private String freeLocalSMS; 
+	private String taxApplicable; 
+	private String localCallRates; 
+	private String intlCallRates;
+	private String dataLimits;
+	private String planStatus;
+	private String operationStatus;
 	
 	public String getPlanId() {
 		return planId;
@@ -24,35 +27,41 @@ public class PlanDetails {
 	public void setPlanId(String planId) {
 		this.planId = planId;
 	}
+	public String getPlanType() {
+		return planType;
+	}
+	public void setPlanType(String planType) {
+		this.planType = planType;
+	}
 	public String getPlanName() {
 		return planName;
 	}
 	public void setPlanName(String planName) {
 		this.planName = planName;
 	}
-	public String getTariff() {
-		return tariff;
+	public String getPlanTariff() {
+		return planTariff;
 	}
-	public void setTariff(String tariff) {
-		this.tariff = tariff;
+	public void setPlanTariff(String planTariff) {
+		this.planTariff = planTariff;
 	}
-	public String getValidity() {
-		return validity;
+	public String getPlanValidity() {
+		return planValidity;
 	}
-	public void setValidity(String validity) {
-		this.validity = validity;
+	public void setPlanValidity(String planValidity) {
+		this.planValidity = planValidity;
 	}
-	public String getStartDate() {
-		return startDate;
+	public String getPlanStartDate() {
+		return planStartDate;
 	}
-	public void setStartDate(String startDate) {
-		this.startDate = startDate;
+	public void setPlanStartDate(String planStartDate) {
+		this.planStartDate = planStartDate;
 	}
-	public String getEndDate() {
-		return endDate;
+	public String getPlanEndDate() {
+		return planEndDate;
 	}
-	public void setEndDate(String endDate) {
-		this.endDate = endDate;
+	public void setPlanEndDate(String planEndDate) {
+		this.planEndDate = planEndDate;
 	}
 	public String getTalkTime() {
 		return talkTime;
@@ -60,54 +69,78 @@ public class PlanDetails {
 	public void setTalkTime(String talkTime) {
 		this.talkTime = talkTime;
 	}
-	public String getMinIntFree() {
-		return minIntFree;
+	public String getFreeIntlMins() {
+		return freeIntlMins;
 	}
-	public void setMinIntFree(String minIntFree) {
-		this.minIntFree = minIntFree;
+	public void setFreeIntlMins(String freeIntlMins) {
+		this.freeIntlMins = freeIntlMins;
 	}
-	public String getMinLocalFree() {
-		return minLocalFree;
+	public String getFreeLocalMins() {
+		return freeLocalMins;
 	}
-	public void setMinLocalFree(String minLocalFree) {
-		this.minLocalFree = minLocalFree;
+	public void setFreeLocalMins(String freeLocalMins) {
+		this.freeLocalMins = freeLocalMins;
 	}
-	public String getSmsIntFree() {
-		return smsIntFree;
+	public String getFreeIntlSMS() {
+		return freeIntlSMS;
 	}
-	public void setSmsIntFree(String smsIntFree) {
-		this.smsIntFree = smsIntFree;
+	public void setFreeIntlSMS(String freeIntlSMS) {
+		this.freeIntlSMS = freeIntlSMS;
 	}
-	public String getSmsLocalFree() {
-		return smsLocalFree;
+	public String getFreeLocalSMS() {
+		return freeLocalSMS;
 	}
-	public void setSmsLocalFree(String smsLocalFree) {
-		this.smsLocalFree = smsLocalFree;
+	public void setFreeLocalSMS(String freeLocalSMS) {
+		this.freeLocalSMS = freeLocalSMS;
 	}
-	public String getTax() {
-		return tax;
+	public String getTaxApplicable() {
+		return taxApplicable;
 	}
-	public void setTax(String tax) {
-		this.tax = tax;
+	public void setTaxApplicable(String taxApplicable) {
+		this.taxApplicable = taxApplicable;
 	}
-	public String getRatelocalcall() {
-		return ratelocalcall;
+	public String getLocalCallRates() {
+		return localCallRates;
 	}
-	public void setRatelocalcall(String ratelocalcall) {
-		this.ratelocalcall = ratelocalcall;
+	public void setLocalCallRates(String localCallRates) {
+		this.localCallRates = localCallRates;
 	}
-	public String getRateIntCall() {
-		return rateIntCall;
+	public String getIntlCallRates() {
+		return intlCallRates;
 	}
-	public void setRateIntCall(String rateIntCall) {
-		this.rateIntCall = rateIntCall;
+	public void setIntlCallRates(String intlCallRates) {
+		this.intlCallRates = intlCallRates;
 	}
-	public String getContentInfo() {
-		return contentInfo;
+	public String getDataLimits() {
+		return dataLimits;
 	}
-	public void setContentInfo(String contentInfo) {
-		this.contentInfo = contentInfo;
+	public void setDataLimits(String dataLimits) {
+		this.dataLimits = dataLimits;
 	}
+	public String getPlanStatus() {
+		return planStatus;
+	}
+	public void setPlanStatus(String planStatus) {
+		this.planStatus = planStatus;
+	}
+	public String getOperationStatus() {
+		return operationStatus;
+	}
+	public void setOperationStatus(String operationStatus) {
+		this.operationStatus = operationStatus;
+	}
+	@Override
+	public String toString() {
+		return "PlanDetails [planId=" + planId + ", planType=" + planType + ", planName=" + planName + ", planTariff="
+				+ planTariff + ", planValidity=" + planValidity + ", planStartDate=" + planStartDate + ", planEndDate="
+				+ planEndDate + ", talkTime=" + talkTime + ", freeIntlMins=" + freeIntlMins + ", freeLocalMins="
+				+ freeLocalMins + ", freeIntlSMS=" + freeIntlSMS + ", freeLocalSMS=" + freeLocalSMS + ", taxApplicable="
+				+ taxApplicable + ", localCallRates=" + localCallRates + ", intlCallRates=" + intlCallRates
+				+ ", dataLimits=" + dataLimits + ", planStatus=" + planStatus + ", operationStatus=" + operationStatus
+				+ "]";
+	}
+	
+	
 	 
 
 }
