@@ -53,7 +53,7 @@ public class PlanDetailController {
 		System.out.println("Exiting Controller; setPlanDetail");
 		return response;
 	}
-	// Viraj Changes
+	// Viraj Changes on 01-Nov 2019
 	@RequestMapping(method=RequestMethod.GET, value="/getHello")
 	@ResponseBody
 	public ResponseEntity<Object> getHello(){
