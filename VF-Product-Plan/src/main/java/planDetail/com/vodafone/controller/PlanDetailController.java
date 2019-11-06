@@ -61,5 +61,10 @@ public class PlanDetailController {
 		response = new ResponseEntity("Hello World World", HttpStatus.OK);
 		return response;
 	}
+	
+	
+	public static void main(String[] args) {
+		System.out.println("Hello Viraj");
+	}
 
 }

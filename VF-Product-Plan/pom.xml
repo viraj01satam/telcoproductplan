@@ -17,7 +17,13 @@
 
 	<properties>
 		<java.version>1.8</java.version>
+		<!-- <buildDirectory>${project.basedir}/target</buildDirectory> -->
+		
+		<buildDirectory>../TelcoProjectPlan</buildDirectory>
 	</properties>
+
+
+
 
 	<dependencies>
 		<dependency>
@@ -54,16 +60,16 @@
 			<artifactId>spring-boot-starter-tomcat</artifactId>
 			<scope>provided</scope>
 		</dependency>
-		
-		<!--  JDBC Dependency JAR File -->
+
+		<!-- JDBC Dependency JAR File -->
 
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-jdbc</artifactId>
 		</dependency>
-		
-		<!--  MY SQL Dependency JAR File -->
-		
+
+		<!-- MY SQL Dependency JAR File -->
+
 		<dependency>
 			<groupId>mysql</groupId>
 			<artifactId>mysql-connector-java</artifactId>
@@ -73,21 +79,10 @@
 	</dependencies>
 
 	<build>
-		<plugins>
-			<plugin>
-				<groupId>org.springframework.boot</groupId>
-				<artifactId>spring-boot-maven-plugin</artifactId>
-			</plugin>
-		</plugins>
-		<resources>
-			<resource>
-				<directory>src/main/resources</directory>
-				<filtering>true</filtering>
-			</resource>
-		</resources>
+		<directory>${buildDirectory}</directory>
 	</build>
 
-	<repositories>
+	<!-- <repositories>
 		<repository>
 			<id>spring-snapshots</id>
 			<name>Spring Snapshots</name>
@@ -101,6 +96,10 @@
 			<name>Spring Milestones</name>
 			<url>https://repo.spring.io/milestone</url>
 		</repository>
+		<repository> <id>dev-azure-com-vs00426021-vs00426021</id> <url>https://pkgs.dev.azure.com/VS00426021/_packaging/VS00426021/maven/v1</url> 
+			<releases> <enabled>true</enabled> </releases> <snapshots> <enabled>true</enabled> 
+			</snapshots> </repository>
+
 	</repositories>
 	<pluginRepositories>
 		<pluginRepository>
@@ -116,7 +115,9 @@
 			<name>Spring Milestones</name>
 			<url>https://repo.spring.io/milestone</url>
 		</pluginRepository>
-	</pluginRepositories>
+	</pluginRepositories> -->
 
 	<packaging>war</packaging>
+
+
 </project>
